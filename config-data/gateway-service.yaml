@@ -20,4 +20,9 @@ spring:
         - id: hu1-reloj-service
           uri: lb://hu1-reloj-service
           predicates:
-            - Path=/data/**
+            - Path=/iodatetime/**
+        - id: hu4-plantilla-service
+          uri: lb://hu4-plantilla-service
+          predicates:
+            - Path=/employee/**
+          
