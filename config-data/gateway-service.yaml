@@ -29,3 +29,7 @@ spring:
           uri: lb://hu3-horasextra-service
           predicates:
             - Path=/time-authorization/**
+        - id: hu2-justificativo-service
+          uri: lb://hu2-justificativo-service
+          predicates:
+            - Path=/justificative/**
