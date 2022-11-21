@@ -28,4 +28,4 @@ spring:
         - id: hu3-horasextra-service
           uri: lb://hu3-horasextra-service
           predicates:
-            - Path=/timeAuthorization/**
+            - Path=/time-authorization/**
