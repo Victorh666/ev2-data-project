@@ -20,11 +20,11 @@ spring:
         - id: hu1-reloj-service
           uri: lb://hu1-reloj-service
           predicates:
-            - Path=/iodatetime/**
+            - Path=/iodatetime/**, /file/**
         - id: hu4-plantilla-service
           uri: lb://hu4-plantilla-service
           predicates:
-            - Path=/employee/**, /file/**
+            - Path=/employee/**
         - id: hu3-horasextra-service
           uri: lb://hu3-horasextra-service
           predicates:
