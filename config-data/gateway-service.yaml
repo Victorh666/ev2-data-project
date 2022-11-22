@@ -25,6 +25,7 @@ spring:
           uri: lb://hu4-plantilla-service
           predicates:
             - Path=/employee/**
+            - Path=/file/**
         - id: hu3-horasextra-service
           uri: lb://hu3-horasextra-service
           predicates:
