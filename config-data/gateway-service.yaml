@@ -33,3 +33,7 @@ spring:
           uri: lb://hu2-justificativo-service
           predicates:
             - Path=/justificative/**
+        - id: hu5-reporte-service
+          uri: lb://hu5-reporte-service
+          predicates:
+            - Path=/report/**
