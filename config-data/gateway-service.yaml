@@ -16,6 +16,14 @@ spring:
       discovery:
         locator:
           enabled: true
+      defaul-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
+      globalcors: 
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: "*"
+            allowedHeaders: "*"
       routes:
         - id: hu1-reloj-service
           uri: lb://hu1-reloj-service
@@ -37,3 +45,4 @@ spring:
           uri: lb://hu5-reporte-service
           predicates:
             - Path=/report/**
+      
